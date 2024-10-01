@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball Scoreboard</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <h1 class="title">Basketball Scoreboard</h1>
+  <main class="board">
+    <section class="home-section">
+      <h2 class="home-title">home</h2>
+      <div class="home-point" id="home-point">0</div>
+      <div class="buttons">
+        <button type="button" class="add-point-btn btn" onclick="add1PointToHome()">+1</button>
+        <button type="button" class="add-point-btn btn" onclick="add2PointToHome()">+2</button>
+        <button type="button" class="add-point-btn btn" onclick="add3PointToHome()">+3</button>
+      </div>
+    </section>
+
+    <section class="guest-section">
+      <h2 class="guest-title">guest</h2>
+      <div class="guest-point" id="guest-point">0</div>
+      <div class="buttons">
+        <button type="button" class="add-point-btn btn" onclick="add1PointToGuest()">+1</button>
+        <button type="button" class="add-point-btn btn" onclick="add2PointToGuest()">+2</button>
+        <button type="button" class="add-point-btn btn" onclick="add3PointToGuest()">+3</button>
+      </div>
+    </section>
+
+    <button type="button" class="reset-btn" onclick="cleanPoints()">Reset</button>
+  </main>
+
+  <footer class="footer">
+    <p>Solo Project by <a href="https://v2.scrimba.com/courses" target="_blank" rel="noopener noreferrer" class="footer-cta">Scrimba</a> - Developer by <a href="https://github.com/mendezpvi/fcp-basketball-scoreboard" target="_blank" rel="noopener noreferrer" class="footer-cta">VIMP</a></p>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>
