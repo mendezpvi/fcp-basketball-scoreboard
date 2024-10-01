@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Cursed';
+  src: url('./font/cursedtimer.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cursed', sans-serif;
+  background-image: url('./image/hero.webp');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.title {
+  color: #F9FAFB;
+  font-size: 2.8rem;
+  text-shadow: -3px -3px #111827;
+}
+
+.title,
+.home-title,
+.guest-title,
+.footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-title,
+.guest-title {
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  text-shadow: -3px -3px #F9FAFB;
+}
+
+.home-point,
+.guest-point {
+  margin-inline: auto;
+  padding-block: .25em;
+  inline-size: 9.5rem;
+  font-size: 5rem;
+  background-color: #111827e1;
+  border-radius: 5px;
+  color: #0EA5E9;
+  text-shadow: 0 0 1px #F9FAFB;
+}
+
+.board {
+  inline-size: 100%;
+  min-inline-size: 22.45rem;
+  max-inline-size: 50ch;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  border: 5px solid #111827;
+  border-radius: 10px;
+}
+
+.buttons {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+}
+
+.btn {
+  inline-size: 3rem;
+  block-size: 3rem;
+  font-family: inherit;
+  font-size: 1.25rem;
+  background-color: #BAE6FD;
+  border: 2px solid currentColor;
+  border-radius: 5px;
+  color: #111827;
+}
+
+.reset-btn {
+  grid-column: span 3;
+  inline-size: 9rem;
+  margin: 1em auto;
+  padding-block: .5em;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #0EA5E9;
+  color: #111827;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+}
+
+.footer {
+  margin-top: 2em;
+  padding-inline: 2em;
+  font-size: .85rem;
+  color: #F9FAFB;
+  background-color: #111827e1;
+  border-radius: 5px;
+}
+
+.footer-cta {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  color: inherit;
+}
+
+@media (hover:hover) {
+  .footer-cta:hover {
+    color: yellow;
+  }
+}
